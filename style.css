@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: #02044a;
+    padding: 50px;
+}
+
+.left-side{
+    width: 60%;
+}
+.head-tags{
+    color: #fff;
+}
+.head-tags h1{
+    font-weight: 900;
+}
+.head-tags p{
+    font-weight: 100;
+}
+
+.detail{
+    padding: 15px;
+    border-radius: 13px;
+    width: 300px;
+    transition: all 0.2s;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+.detail span{
+    color: #fff;
+}
+.detail:hover{
+    border-color: #0c75ff;
+    background-color: #0c75ff25;
+}
+.detail .bx{
+    color: #0c75ff;
+    font-size: 20px;
+}
+
+.social-icons i{
+    color: #fff;
+    padding: 16px;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.social-icons i:hover{
+    background-color: #0c75ff;
+}
+
+
+.right-side{
+    width: 40%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.inputs{
+    width: 100%;
+}
+
+.form-inputs{
+    color: #000125 !important;
+}
+.form-inputs label{
+    font-size: 15px;
+}
+.main-input{
+    border: 2px solid #d8d8d8;
+    padding: 12px;
+    border-radius: 10px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.main-input i{
+    font-size: 20px;
+    color: #d8d8d8;
+    transition: all 0.2s;
+}
+.main-input input{
+    border: none;
+}
+.main-input input:focus{
+    outline: none;
+}
+.main-input:hover{
+    border-color: #0c75ff;
+}
+.main-input:hover i{
+    color: #0c75ff;
+}
+
+.right-side button{
+    font-size: 15px;
+    padding: 13px 30px;
+    border: none;
+    background-color: #0c75ff;
+    color: #fff;
+    border-radius: 9px;
+    transition: all 0.2s;
+}
+.right-side button:hover{
+    background-color: #02044a;
+}
+
+
+
+
+
+@media screen and (max-width: 740px){
+    main{
+        flex-direction: column;
+        height: fit-content;
+        padding: 35px;
+    }
+    .left-side, .right-side{
+        width: 100%;
+    }
+    .left-side{
+        margin-bottom: 50px;
+    }
+    .head-tags, .details{
+        margin-bottom: 5px !important;
+    }
+}
+
+
